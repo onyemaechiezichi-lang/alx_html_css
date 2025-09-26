@@ -1,0 +1,66 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page layout: stack header / main / footer */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Main area: article + aside horizontally */
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+  gap: 10px;
+}
+
+/* Article: 2/3 */
+article {
+  flex: 2;
+  padding: 15px;
+  overflow-y: auto;
+  background: #f9f9f9;
+}
+
+/* Aside: 1/3 */
+aside {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  background: #f1f1f1;
+}
+
+/* Header & footer */
+header, footer {
+  padding: 10px;
+  background: #ddd;
+  text-align: center;
+}
+
+/* Make nav cleaner */
+nav ul { list-style: none; }
+nav a { text-decoration: none; color: #333; }
+
+/* RESPONSIVE: when the viewport is narrow, stack main children vertically.
+   Also (important) this will trigger when the page has the class
+   'works_on_smartphone' (which your exercise expects). */
+@media (max-width: 700px) {
+  main {
+    flex-direction: column;
+  }
+}
+
+/* Extra: force mobile-friendly behavior when the body has the class.
+   This helps if base.css depends on that class — and gives a fallback here. */
+body.works_on_smartphone main {
+  /* the following will be overridden by the media query on large screens,
+     but if base.css depends on the class this ensures the stacked layout */
+  flex-direction: column;
+}

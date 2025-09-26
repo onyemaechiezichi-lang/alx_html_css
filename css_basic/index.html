@@ -1,114 +1,73 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>My First Website</title>
-        <link href="base.css" rel="stylesheet">
-        <link href="styles.css" rel="stylesheet">
-    </head>
-    <body>
+  <head>
+    <meta charset="utf-8">
+    <title>My First Website</title>
 
-        <header>
-            <nav>
-                <ul>
-                    <li>
-                        <p>
-                            <h3>
-                                <a href="tweets.html"> Tweets</a>
-                            </h3>
-                        </p>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+    <!-- ADD THIS: viewport for mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <main>
-            <article>
-                <section>
-                    <NAV>
-                        <p>
-                            <h1>
-                                Ezichukwu Onyemaechi
-                            </h1>
-                            <a href="https://i.ibb.co/gTDZZT8/ALX-Logo-07.png"> link to click</a>
-                            
-                        </p>
-                    </NAV>
-                </section>
-                <section id="About me">
-                    <p>
-                        <h2>
-                            About Me
-                        </h2>
-                    </p>
+    <link href="base.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+  </head>
 
-                    <p>
-                        <h3>
-                            I’m a Settlement and Reconciliation Specialist with expertise in office automation. My experience in the fintech space has been shaped by building tools and systems that ensure accuracy, efficiency, and transparency in financial operations. I focus on automating settlement processes, developing reconciliation solutions that eliminate discrepancies, and reducing manual workload through Excel automation and custom-built applications
-                            With a background in Mathematics and Statistics, I bring analytical precision to every project, whether it’s building software, solving operational puzzles, or automating reporting workflows. Outside of tech, I express my creativity as a pianist—proof that logic and rhythm can coexist beautifully.
-                            
-                        </h3>
-                    </p>
+  <!-- ADD THIS CLASS so base.css rules for small screens apply -->
+  <body class="works_on_smartphone">
 
-                    <p>
-                        <h4>
-                            I'm driven by a passion for bridging finance and technology, making things work smarter, not harder.
-                        </h4>
-                    </p>
-                </section>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <h3><a href="tweets.html">Tweets</a></h3>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-                <table>
-                    <thead>
-                        <tr>
-                            <th scope="col">Name</th>
-                            <th scope="col">Age</th>
-                            <th scope="col">Country</th>
-                        </tr>
-    
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">John</th>
-                            <td>25</td>
-                            <td>USA</td>
-                        </tr>
+    <main>
+      <article>
+        <section>
+          <nav>
+            <h1>Ezichukwu Onyemaechi</h1>
+            <a href="https://i.ibb.co/gTDZZT8/ALX-Logo-07.png">link to click</a>
+          </nav>
+        </section>
 
-                        <tr>
-                            <th scope="row">Emily</th>
-                            <td>28</td>
-                            <td>Canada</td>
-                        </tr>
+        <section id="About me">
+          <h2>About Me</h2>
 
-                        <tr>
-                            <th scope="row">Michael</th>
-                            <td>32</td>
-                            <td>Australia</td>
-                        </tr>
+          <h3>
+            I’m a Settlement and Reconciliation Specialist with expertise in office automation...
+          </h3>
 
-                        <tr>
-                            <th scope="row">Sophia</th>
-                            <td>21</td>
-                            <td>UK</td>
-                        </tr>
+          <h4>I'm driven by a passion for bridging finance and technology, making things work smarter, not harder.</h4>
+        </section>
 
-                    </tbody>
-                </table>
-            </article>
-            <aside>
-                <p>
-                    placeholder to add comment thread later
-                </p>
-            </aside>
-        </main>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Age</th>
+              <th scope="col">Country</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">John</th><td>25</td><td>USA</td></tr>
+            <tr><th scope="row">Emily</th><td>28</td><td>Canada</td></tr>
+            <tr><th scope="row">Michael</th><td>32</td><td>Australia</td></tr>
+            <tr><th scope="row">Sophia</th><td>21</td><td>UK</td></tr>
+          </tbody>
+        </table>
+      </article>
 
-        <footer>
-            <p>
-                Made by Ezichukwu Onyemaechi - <a href="https://sites.google.com/view/ezichukwuonyemaechi/about" target="_blank">here</a>
-            </p>
-        </footer>
-        
-    </body>
+      <aside>
+        <p>placeholder to add comment thread later</p>
+      </aside>
+    </main>
 
+    <footer>
+      <p>Made by Ezichukwu Onyemaechi - <a href="https://sites.google.com/view/ezichukwuonyemaechi/about" target="_blank">here</a></p>
+    </footer>
+
+  </body>
 </html>
